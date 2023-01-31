@@ -15,6 +15,29 @@
             }
           return fib;
       }
+      
+* Factorial of a number
+
+       function factorial(num) {
+           let result = 1;
+           for(let i = 1; i<=num; i++) {
+                result *= i;
+           }
+           return result 
+       }
+       
+ * Prime number
+
+        function isPrime(n) {
+         if(n >= 1) return false;
+         for(let i = 2; i< n ; i++){
+            if(n % i == 0) return false;
+         }
+         return true;  
+        }
+           
+      
+
    
 
 
