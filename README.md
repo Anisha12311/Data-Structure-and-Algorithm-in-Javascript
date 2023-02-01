@@ -92,6 +92,27 @@
                   return acc;
                   },[])
           console.log(b)        
+          
+ * Calculate the Area of a Triangle
+ 
+           // If we are known base or height
+           
+           let base = prompt("Enter the base of triangle ");
+           let height = prompt("Enter the height of triangle ");
+           
+           let area = (base * height)/2
+           console.log("The area of the triangle is " , area);
+           
+           //If we are known all side of triangle
+           
+           let side1 = parseInt(prompt("Enter side1 "))
+           let side2 = parseInt(prompt("Enter side2 "))
+           let side3 = parseInt(prompt("Enter side3 "))
+           //semi perimeter
+           let s = (side1+side2+side3)/2
+           let areaTri = Math.sqrt(s*(s-side1)*(s-side2)*(s-side3));
+           console.log("The are of triangle is", areaTri);
+           
       
 
    
