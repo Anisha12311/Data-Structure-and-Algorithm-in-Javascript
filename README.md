@@ -46,7 +46,52 @@
              }
              return true;
            }
+           
+ * Stack
+ 
+        class Stack{
+            constructor(){
+              this.items = [];
+            }
+
+            add(element){
+              return this.items.push(element)
+            }
+            pop(){
+              if(this.items == 0) return "Underflow";
+              return this.items.pop()
+            }
+            peek(){
+              return this.items[this.items.length - 1];
+            }
+
+            isEmpty(){
+              return this.items == 0;
+            }
+          }
+
+
+            let stack = new Stack();
+            stack.add(10);
+            stack.add(20);
+            stack.add(30);
+
+            console.log(stack.items);
+            console.log(stack.pop());
+            console.log(stack.peek());
+            console.log(stack.items);
        
+       
+ * Remove Duplicate Items from Array
+ 
+          let a = [1,23,2,2,31,1,12,13,12,15,16,1];
+          let b = a.reduce(function (acc, values){
+                  if(acc.indexOf(values) === -1){
+                  acc.push(values)
+                  }
+                  return acc;
+                  },[])
+          console.log(b)        
       
 
    
