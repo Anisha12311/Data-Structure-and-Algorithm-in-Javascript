@@ -103,7 +103,7 @@
            let area = (base * height)/2
            console.log("The area of the triangle is " , area);
            
-           //If we are known all side of triangle
+           //If we are known all sides of triangle
            
            let side1 = parseInt(prompt("Enter side1 "))
            let side2 = parseInt(prompt("Enter side2 "))
