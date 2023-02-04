@@ -113,8 +113,26 @@
            let areaTri = Math.sqrt(s*(s-side1)*(s-side2)*(s-side3));
            console.log("The are of triangle is", areaTri);
            
-      
+ * Swap two variables
+ 
+            let a = parseInt(prompt("Enter the first number "));
+            let b = parseInt(prompt("Enter the second number "));
+            a = a+b;
+            b = a-b;
+            a = a-b;
 
+            console.log("First value after the swap ", a)
+            console.log("Second value after the swap ",b)
+
+* Convert kilometeres to miles
+
+            let factors = 0.621;
+
+            let kilometers = prompt("Enter the kilometers ");
+
+            let miles = kilometers * factors;
+
+            console.log("Miles ",miles)
    
 
 
